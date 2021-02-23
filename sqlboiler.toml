@@ -1,0 +1,10 @@
+output = "pkg/db/models"
+wipe = true
+
+[mysql]
+dbname = "blog"
+host = "127.0.0.1"
+port = 13306
+user = "root"
+pass = "root"
+sslmode = "false"

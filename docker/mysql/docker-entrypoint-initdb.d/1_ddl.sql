@@ -1,0 +1,18 @@
+DROP SCHEMA IF EXISTS blog;
+CREATE DATABASE blog CHARACTER SET utf8mb4;
+use blog;
+
+CREATE TABLE blog.user(
+  id MEDIUMINT NOT NULL,
+  name CHAR(255) NOT NULL,
+  password BINARY(60) NOT NULL,
+  PRIMARY KEY (id)
+) DEFAULT CHARACTER SET = utf8mb4;
+
+CREATE TABLE blog.article(
+  id MEDIUMINT NOT NULL,
+  title CHAR(255),
+  content MEDIUMTEXT,
+  PRIMARY KEY (id)
+) DEFAULT CHARACTER SET = utf8mb4;
+
